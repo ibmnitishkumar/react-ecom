@@ -323,7 +323,7 @@ export const HomePage: React.FC<HomePageProps> = ({ userName, onLogout }) => {
           onBack={handleBackFromCheckout}
           onUpdateQuantity={handleUpdateQuantity}
           onRemove={handleRemoveFromCart}
-          onPlaceOrder={(address) => handlePlaceOrder([...cartItems])}
+          onPlaceOrder={(_address) => handlePlaceOrder([...cartItems])}
         />
         <CartDrawer
           open={cartOpen}
